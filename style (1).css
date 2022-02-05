@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body1 {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(195, 198, 199, 1) 100%);
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.box1 {
+    flex: 1;
+}
+
+.line {
+    border-left: 3px solid #141414;
+    margin-top: 10vh;
+    height: 80vh;
+    width: 2px;
+}
+
+.photo {
+    border-radius: 2%;
+    border: solid #141414;
+    width: 80vh;
+    height: 80vh;
+    margin: 10vh;
+}
+
+.box2 {
+    margin-left: 25px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    gap: 30px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.a1 {
+    text-decoration: none;
+    padding: 5px;
+    border: solid 1px #141414;
+    color: black;
+    font-size: 15px;
+    border-radius: 10%;
+    width: 120px; 
+    height: 30px;
+    margin: 0 10px 0 10px;
+}
+.a1:hover {
+    background-color: black;
+    color: white;
+}
+.buttons {
+    width: 200px;
+    height: 30px;
+    display: flex;
+    justify-content: space-around !important;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+/* .box3 {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    text-align: center;
+
+} */
+
+.a2 {
+    text-decoration: none;
+    padding: 5px;
+    border: solid 1px #141414;
+    color: black;
+    font-size: 25px;
+    border-radius: 15%;
+}
+/* .btn2 {
+    display: flex;
+    justify-content: space-between;
+} */
+body {
+    font-family: 'Athiti', sans-serif;
+}
+.language {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.btn2 {
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.img {
+    width: 30px;
+    height: 30px;
+}
+.social {
+    height: 20vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    align-content: flex-end;
+}
+.a1 {
+    flex-basis: 70%;
+}
+.prj {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .line {
+        display: none;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 100vh;
+    }
+    .photo {
+        width: 55vh;
+        height: 55vh;
+        margin-bottom: 5px;
+    }
+    .box1 {
+        margin-bottom: 5px;
+    }
+    .box2 {
+        margin-top: 5px;
+    }
+}
